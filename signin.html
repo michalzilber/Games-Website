@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="bodyIMG"></div>
+    <h1>-welcome-</h1>
+    <button id="log">log in</button>
+    <button id="sign">sign in</button>
+
+
+    <div id="loginModal" class="modal">
+        
+            <span id="close"class="close">x</span>
+            <h2>כניסת משתמש</h2>
+            <form >
+                <input type="text" id="email"placeholder="אימייל" required>
+                <input type="password" id="password" placeholder="סיסמה" required>
+                <button type="submit" id="enter">הכנס</button>
+            </form>
+            
+                <a href="#" id="link">אין לך חשבון? הירשם כאן</a>
+            
+        
+    </div>
+    <div id="signinModal" class="modal1">
+        
+            <span class="close2" id="close">x</span>
+            <h2>הרשמה</h2>
+            <form action="/signin" method="POST">
+                <input type="text" placeholder="שם מלא" required>
+                <input type="email" placeholder="אימייל" required>
+                <input type="password" placeholder="סיסמה" required>
+                <button type="submit" id="enter">הירשם</button>
+            </form>
+       
+    </div>
+
+
+    <script src="home.js"></script>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    
+    <div class="bodyIMG"></div>
+    <div id="title">-welcome-</div>
+
+
+    <button id="log">log in</button>
+    <button id="sign">sign in</button>
+    
+    <div id="sideMenu" class="side-menu">
+        <span class="open-btn" onclick="openMenu()">📂</span>
+        <span class="close-btn" onclick="closeMenu()">&times;</span>
+        <h2>------</h2>
+        <button id="logout">התנתק</button>
+
+       
+    </div>
+    
+        
+    <div class="main">
+      <a href="./memory game/memory.html" class="a">  <div class="game">
+           memory game
+        </div></a>
+        <a href="./TIC Tac Toe/TIC.html" class="a">  <div class="game">
+            Tic tac toe
+         </div></a>
+         <a href="./blind/blind.html" class="a">  <div class="game">
+          Blind method
+         </div></a>
+         <a href="./candy crush/candy.html" class="a">  <div class="game">
+            Candy crush
+         </div></a>
+    </div>
+
+
+    <div id="loginModal" class="modal">
+        
+            <span id="close"class="close">x</span>
+            <h2>כניסת משתמש</h2>
+            <form >
+                <input type="text" id="email"placeholder="אימייל" required>
+                <input type="password" id="password" placeholder="סיסמה" required>
+                <button type="submit" id="enter">הכנס</button>
+            </form>
+            
+                <a href="#" id="link">אין לך חשבון? הירשם כאן</a>
+            
+        
+    </div>
+    <div id="signinModal" class="modal1">
+        
+            <span class="close2" id="close">x</span>
+            <h2>הרשמה</h2>
+            <form action="/signin" method="POST">
+                <input type="text" placeholder="שם מלא" id="nameSign"required>
+                <input type="email" placeholder="אימייל" id="emailSign"required>
+                <input type="password" placeholder="סיסמה" id="passwordSign"required>
+                <button type="submit" id="enter2">הירשם</button>
+            </form>
+       
+    </div>
+    <div id="error-message" style="color: red;"></div>
+
+
+  
+
+
+
+    <script src="home.js"></script>
+</body>
+</html>
